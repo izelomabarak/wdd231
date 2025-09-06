@@ -1,0 +1,41 @@
+@media only screen and (min-width: 320px) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger{
+        display:none
+    }
+
+    .navigation {
+        display: block;
+        background-color: #ba5ff798;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+
+    .information {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .about p {
+        padding-bottom: 4.6rem;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
