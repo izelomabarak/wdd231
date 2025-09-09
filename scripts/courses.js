@@ -10,7 +10,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -47,7 +47,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -61,7 +61,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -85,25 +85,16 @@ const cse = document.querySelector('#cse');
 
 all.addEventListener("click", () => {
   showCourses(courses);
-});
-
-all.addEventListener("click", () => {
   createCredits(courses);
 });
 
 wdd.addEventListener("click", () => {
   showCourses(courses.filter(course => course.subject.includes("W")));
-});
-
-wdd.addEventListener("click", () => {
   createCredits(courses.filter(course => course.subject.includes("W")));
 });
 
 cse.addEventListener("click", () => {
   showCourses(courses.filter(course => course.subject.includes("C")));
-});
-
-cse.addEventListener("click", () => {
   createCredits(courses.filter(course => course.subject.includes("C")));
 });
 
@@ -112,21 +103,27 @@ function showCourses(filteredCourses){
 	filteredCourses.forEach(course => {
 		let name = document.createElement("p")
 
-		name.textContent = `${course.subject} ${course.number}`;
-
-    document.querySelector(".courses").appendChild(name);});
+    if (course.completed === true){
+    name.classList.toggle('completed')
+    name.textContent = `${course.subject} ${course.number} ☑️`
+    document.querySelector(".courses").appendChild(name);
+    }
+    if (course.completed === false){
+    name.textContent = `${course.subject} ${course.number}`;
+    document.querySelector(".courses").appendChild(name);}
+  });
 }
 
 function createCredits(filteredCourses){
-  let suma = 0;
+  let sum = 0;
   let credits = [];
 	filteredCourses.forEach(courses => {
         credits.push(courses.credits)});
   for (let credit of credits) {
-    suma += credit;
+    sum += credit;
   }
   const showCredits = document.querySelector("#credits");
-  showCredits.innerHTML = `The total credits for course listed above is ${suma}`;
+  showCredits.innerHTML = `The total credits for course listed above is ${sum}`;
 }
 
 showCourses(courses);

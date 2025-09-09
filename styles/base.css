@@ -71,6 +71,14 @@ header span {
     background-color: #ba5ff798;
     padding: 10px;
 }
+.certificate p.completed {
+    background-color: #fffc5f;
+    padding: 10px;
+    margin: 0;
+    border:  #000000 solid 2px;  
+    margin-bottom: 10px;
+    text-align: center;
+}
 .certificate p {
     background-color: #898bf1;
     padding: 10px;
