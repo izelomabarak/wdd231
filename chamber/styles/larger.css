@@ -1,0 +1,64 @@
+@media only screen and (min-width: 320px) {
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px repeat(2, 1fr);
+    }
+
+    .hamburger{
+        display:none
+    }
+
+    .navigation {
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a {
+        display: block;
+        color: #000000;
+        background-color: #ba5ff798;
+        text-decoration: none;
+        border: solid 1px #000000;
+        padding: .8rem 10px;
+    }
+
+    .filters{
+        max-width: 500px;
+    }
+    .card { 
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    place-items: center;
+    }
+    
+    .lists { 
+    background-color: #898bf1;
+    padding: 1rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    grid-gap: 0;
+    padding: 10px;
+    }
+
+    .website{
+        color: #3b1e4e;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: #e0de5f;
+    }
+    
+    footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 10px;
+    text-align: center;
+    }
+}
