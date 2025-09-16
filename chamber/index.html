@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial=scale=1.0">
-        <title>Puebla Trade Federation</title>
+        <title>Course Home Page</title>
         <meta name="description" content="WDD 231 - Web Frontend Development 1 - Jose Luis Izelo Mabarak, this is the first activitie of WDD 231, Course Home Page.">
         <meta name="author" content="Jose Luis Izelo Mabarak">      
         <!--Tektur-->
@@ -13,12 +13,11 @@
 
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <script src="scripts/enterprises.js" defer></script>
+        <script src="scripts/courses.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
 
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="images/favicon.ico">
 
         <meta property="og:title" content="Course Home Page">
         <meta property="og:description" content="WDD 231 - Web Frontend Development 1 - Jose Luis Izelo Mabarak, this is the first activitie of WDD 231, Course Home Page."> 
@@ -28,35 +27,44 @@
     <body>
         <header>
             <img src="images/logo.svg" alt="Site logo" width="512" height="512">
-            <span>Puebla Trade Federation</span>
+            <span>Jose Luis Izelo Mabarak</span>
             <button id="han-btn" class="hamburger"></button>
-            <nav id="nav-bar" class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="current">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Discover</a></li>
-                </ul>
-            </nav>
         </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Fina Project</a></li>
+            </ul>
+        </nav>
         <main>
-            <section>
+            <h1>Home</h1>
+            <div class="information">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>Hello every one, my name is Jose Luis Izelo Mabarak from Puebla, Mexico, I am In a full time Service Mission in the church, I also like play the piano and build things like legos, I realy whant to learn more about programation. In this BYU Patway program and I am very excited for learn new things.</p>
+                </section>
+                <section class="student">
+                    <h2>Student Photo</h2>
+                    <div>      
+                        <img src="images/profile.jpg" alt="Hello, my name is Luis Izelo">
+                    </div>
+                </section>
+            </div>
+            <section class="certificate">
+                <h2>Web Certificate Courses</h2>
                 <nav>
                     <ul class="filters">
-                        <li><a href="#" id="grid">Grid</a></li>
-                        <li><a href="#" id="list">List</a></li>
+                        <li><a href="#" id="all">All Courses</a></li>
+                        <li><a href="#" id="wdd">WDD Courses</a></li>
+                        <li><a href="#" id="cse">CSE Courses</a></li>
                     </ul>
                 </nav>
-                <div id="cards"></div>
+                <div class="courses"></div> 
+                <span class="points" id="credits"></span>
             </section>
         </main>
         <footer>
-            <div>
-                <p>Puebla Trade Federation</p>
-                <p>1476 Sandhill Rd Orem, PUE 84058-7310 MEX</p>
-                <p>pueblatradedfed@.org</p>
-                <p>+52 223 567 4890</p>
-            </div>
             <div class="social">
                 <a href="https://github.com/izelomabarak" target="https://github.com/izelomabarak"><img src="images/github.svg" alt="Facebook" width="16" height="16"></a>
                 <a href="https://www.linkedin.com/in/jose-luis-izelo-mabarak-07b009317/" target="https://www.linkedin.com/in/jose-luis-izelo-mabarak-07b009317/"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
@@ -64,8 +72,6 @@
                 <a href="#"><img src="images/whatsapp.svg" alt="Whatsapp" width="16" height="16"></a>
             </div>
             <div class="dates">
-                <p>wdd231 Class Project</p>
-                <p>Jose Luis Izelo Mabarak</p>
                 <p id="year"></p>
                 <p id="modified"></p>
             </div>

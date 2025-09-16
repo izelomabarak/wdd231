@@ -1,4 +1,14 @@
-@media only screen and (min-width: 320px) {
+:root {
+    --styling-font-title: Tektur, Georgia, serif;
+    --styling-font-text: Raleway, Georgia, sans-serif;
+    --Accent1-Color: #fbfbc1;
+    --Accent2-color: #3e0923;
+    --Title-color: #ffff75;
+    --Text-color: #6a0c39;
+    --Hover: #830240;
+    text-decoration: none;
+}
+@media only screen and (min-width: 740px) {
     header, main, nav, footer {
         margin: 0 auto;
     }
@@ -19,13 +29,12 @@
     }
     .navigation a {
         display: block;
-        color: #000000;
-        background-color: #ba5ff798;
+        color: var(--Title-color);
+        background-color: var(--Accent2-color);
         text-decoration: none;
         border: solid 1px #000000;
         padding: .8rem 10px;
     }
-
     .filters{
         max-width: 500px;
     }
@@ -37,7 +46,6 @@
     }
     
     .lists { 
-    background-color: #898bf1;
     padding: 1rem;
     border: 1px solid black;
     display: grid;
@@ -48,11 +56,9 @@
     }
 
     .website{
-        color: #3b1e4e;
         text-decoration: none;
         padding: 10px;
         border: 1px solid black;
-        background-color: #e0de5f;
     }
     
     footer {

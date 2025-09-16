@@ -1,0 +1,27 @@
+@media only screen and (min-width: 500px) and (max-width: 740px) {
+    .filters{
+        max-width: 500px;
+    }
+    .card { 
+    display:grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    place-items: center;
+    }
+    
+    .lists { 
+    padding: 1rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    grid-gap: 0;
+    padding: 10px;
+    }
+
+    .website{
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid black;
+    }
+}
