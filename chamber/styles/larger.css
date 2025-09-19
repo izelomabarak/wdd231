@@ -68,7 +68,8 @@
     /* ----------------------------------------------------Body House---------------------------------------------------- */
     
     a.link {
-    font-size: 1.6rem;
+        font-size: 1.9rem;
+        top: 73%;
     }
 
     .news {
@@ -78,14 +79,16 @@
         padding: 10px;
     }
 
-    .currentWeather{
-    margin-top: 0;
-    }
-
-    .weatherForecast{
-    margin-top: 0;
+    .events p {
+        padding: 20px;
     }
     
+    #spotlights { 
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    place-items: center;
+    }
     /* ----------------------------------------------------Footer---------------------------------------------------- */
 
     footer {
