@@ -17,7 +17,7 @@
         grid-template-columns: 24px repeat(2, 1fr);
     }
 
-    .hamburger{
+    .hamburger {
         display:none
     }
 
@@ -35,9 +35,13 @@
         border: solid 1px #000000;
         padding: .8rem 10px;
     }
-    .filters{
+
+    /* ----------------------------------------------------Body Directory---------------------------------------------------- */
+
+    .filters {
         max-width: 500px;
     }
+
     .card { 
     display:grid; 
     grid-template-columns: repeat(3, 1fr);
@@ -55,12 +59,35 @@
     padding: 10px;
     }
 
-    .website{
+    .website {
         text-decoration: none;
         padding: 10px;
         border: 1px solid black;
     }
+
+    /* ----------------------------------------------------Body House---------------------------------------------------- */
     
+    a.link {
+    font-size: 1.6rem;
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+        padding: 10px;
+    }
+
+    .currentWeather{
+    margin-top: 0;
+    }
+
+    .weatherForecast{
+    margin-top: 0;
+    }
+    
+    /* ----------------------------------------------------Footer---------------------------------------------------- */
+
     footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

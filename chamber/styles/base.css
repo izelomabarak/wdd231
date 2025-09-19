@@ -9,6 +9,9 @@
     text-decoration: none;
 }
 
+h1 {
+    color: var(--Accent2-color);
+}
 /* ----------------------------------------------------Header---------------------------------------------------- */
 
 header {
@@ -128,7 +131,7 @@ header span {
     font-family: var(--styling-font-text);
 }
 
-.information { 
+.card .information { 
     color: var(--Text-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -193,6 +196,147 @@ header span {
     border: 1px solid black;
     background-color: var(--Accent2-color);
 }
+
+/* ----------------------------------------------------Body House---------------------------------------------------- */
+/* ------------------------------------Hero------------------------------------ */
+
+.hero {
+position: relative;
+}
+
+.hero img {
+width: 100%;
+}
+
+a.link {
+display: block;
+position: absolute;
+top: 73%;
+right: 5%;
+width: 25%;
+margin: 0 auto;
+padding: 10px;
+background-color: var(--Accent2-color);
+text-align: center;
+color: var(--Title-color);
+text-decoration: none;
+font-size: 1.05rem;
+}
+
+a.link:hover {
+    background-color: var(--Hover);
+}
+
+/* ------------------------------------news------------------------------------ */
+
+.news{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+}
+
+.events h2 {
+    text-align: center;
+    background-color: var(--Accent2-color);
+    padding: 10px;
+    margin: 0;
+    color: var(--Title-color);
+}
+.events p {
+    display: block;
+    padding: 50px;
+    background-color: var(--Accent1-Color);
+    color: var(--Text-color);
+    margin: 0;
+}
+
+/* ------------------------------------currentWeather------------------------------------ */
+
+.currentWeather h2 {
+    text-align: center;
+    background-color: var(--Accent2-color);
+    padding: 10px;
+    margin: 0;
+    color: var(--Title-color);
+}
+
+.currentWeather img {
+    width: 100%;
+}
+
+.currentWeatherDivision{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: var(--Accent1-Color);
+    color: var(--Text-color);
+}
+
+/* ------------------------------------weatherForecast------------------------------------ */
+
+.weatherForecast h2 {
+    text-align: center;
+    background-color: var(--Accent2-color);
+    padding: 10px;
+    margin: 0;
+    color: var(--Title-color);
+}
+.weatherForecast p {
+    display: block;
+    padding: 20px;
+    background-color: var(--Accent1-Color);
+    color: var(--Text-color);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------spotlights------------------------------------ */
+
+#spotlights { 
+    color: var(--Text-color);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+    border: 5rem;
+    border-color: black;
+    border-radius: 1rem;
+    font-family: var(--styling-font-text);
+}
+
+#spotlights .information { 
+    color: var(--Text-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 0 none black;
+}
+
+#spotlights .oneCard{ 
+    background-color: var(--Accent1-Color);
+    padding: 1rem;
+    border: none;
+    display: grid;
+    place-items: center;
+    grid-gap: 0;
+    border: 3px solid black;
+}
+
+#spotlights section h2{ 
+    background-color: var(--Accent2-color);
+    color: var(--Title-color);
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#spotlights section img{ 
+    width: 100%;
+    border: 2px solid black;
+}
+
+#spotlights section p{ 
+    width: 100%;
+}
+
 /* ----------------------------------------------------Footer---------------------------------------------------- */
 
 footer {
