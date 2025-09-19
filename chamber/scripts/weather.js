@@ -8,10 +8,10 @@ const mySunrise = document.querySelector("#sunrise");
 const mySunset = document.querySelector("#sunset");
 
 const myKey = "2330df0e341dd08e14a87b75e8bedcdf"
-const myLat = "44.32"
-const myLong = "-76.58"
+const myLat = "19.04778"
+const myLong = "-98.20723"
 
-const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
 
 async function apiFetch() {
   try {
