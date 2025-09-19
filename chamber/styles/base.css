@@ -263,6 +263,7 @@ a.link:hover {
 
 .currentWeather img {
     width: 100%;
+    border: 2px solid black;
 }
 
 .currentWeatherDivision{
