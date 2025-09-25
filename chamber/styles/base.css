@@ -1,7 +1,7 @@
 :root {
     --styling-font-title: Tektur, Georgia, serif;
     --styling-font-text: Raleway, Georgia, sans-serif;
-    --Accent1-Color: #fbfbc1;
+    --Accent1-color: #fbfbc1;
     --Accent2-color: #3e0923;
     --Title-color: #ffff75;
     --Text-color: #6a0c39;
@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-h1 {
+h1, h2 {
     color: var(--Accent2-color);
 }
 /* ----------------------------------------------------Header---------------------------------------------------- */
@@ -139,7 +139,7 @@ header span {
 }
 
 .oneCard{ 
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     padding: 1rem;
     border: none;
     display: grid;
@@ -179,7 +179,7 @@ header span {
 }
 
 .lists { 
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     padding: 1rem;
     border: 1px solid black;
     display: grid;
@@ -246,7 +246,7 @@ a.link:hover {
 .events p {
     display: block;
     padding: 40px;
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     color: var(--Text-color);
     margin: 0;
 }
@@ -269,7 +269,7 @@ a.link:hover {
 .currentWeatherDivision{
     display: grid;
     grid-template-columns: 20% 80%;
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     color: var(--Text-color);
 }
 
@@ -285,7 +285,7 @@ a.link:hover {
 .weatherForecast p {
     display: block;
     padding: 20px;
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     color: var(--Text-color);
     margin: 0;
     font-size: 1.5rem;
@@ -313,7 +313,7 @@ a.link:hover {
 }
 
 #spotlights .oneCard{ 
-    background-color: var(--Accent1-Color);
+    background-color: var(--Accent1-color);
     padding: 1rem;
     border: none;
     display: grid;
@@ -336,6 +336,194 @@ a.link:hover {
 
 #spotlights section p{ 
     width: 100%;
+}
+/* ----------------------------------------------------Body join---------------------------------------------------- */
+.formData{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* ------------------------------------Form------------------------------------ */
+*{box-sizing: border-box;}
+html {
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+}
+
+form {
+    margin: 1rem 2%;
+} 
+
+label {
+    display: block;
+    font-size: .8rem;
+    color: purple;
+    padding-top: .2rem;
+}
+
+h3 {
+    font-size: .9rem;
+    color: var(--Accent2-color);
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+textarea,
+input[type=tel],
+input[type=date],
+input[type=email],
+select {
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+.membership-levels label {
+  display: block;
+  margin: 1rem 0; 
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.membership-levels input[type="radio"] {
+  transform: scale(1.6); 
+  margin-right: 10px;
+}
+
+input:required {
+    border-left-color: #d70000;
+}
+
+input:focus {
+    border-left-color: black; 
+    outline:none;
+}
+
+input:required:valid {
+    border-left-color: green;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--Accent2-color);
+    color: var(--Accent1-color);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=submit]:hover {
+    background-color: var(--Hover);
+}
+  
+input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+}
+
+.h1Tanks {
+    color: var(--Accent2-color);
+    font-family: var(--styling-font-title);
+}
+
+#results {
+    margin: 10px;
+    color: var(--Text-color);
+    font-family: var(--styling-font-text);
+    font-size: 1.15rem;
+}
+/* ------------------------------------Carts------------------------------------ */
+@keyframes planIntro {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        background-color: #ffff00;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#showHere article{
+    display: block;
+    align-self: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--Accent1-color);
+    padding: 5px;
+    margin: 20px;
+    animation: planIntro .6s ease-out both;
+    animation-delay: calc(var(--i, 0) * 120ms);
+}
+
+#showHere article h3{
+    color: var(--Text-color);
+    font-family: var(--styling-font-title);
+}
+#showHere article button{
+    background-color: var(--Accent2-color);
+    color: var(--Title-color);
+    font-family: var(--styling-font-text);
+}
+#showHere article button:hover{
+    background-color: #a30000;
+}
+
+#membershipCarts {
+    box-shadow: 0 0 3rem #777;
+    width: 95%;
+    padding: 0;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--Accent1-color);
+}
+
+#membershipCarts div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--Accent2-color);
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
+
+#membershipCarts h2 {
+    margin: 0;
+    color: var(--Title-color);
+    font-family: var(--Title-color);
+}
+
+#membershipCarts button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+    background-color: var(--Accent1-color);
+    color: var(--Accent2-color);
+    font-size: 1.6rem;
+}
+#membershipCarts button:hover {
+    background-color: var(--Hover);
+}
+
+#membershipCarts p {
+    padding: 10px;
+    color: var(--Text-color);
+    
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* ----------------------------------------------------Footer---------------------------------------------------- */
