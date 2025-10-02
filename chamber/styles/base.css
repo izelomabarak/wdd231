@@ -526,6 +526,65 @@ input:-webkit-autofill{
     background-color: rgba(255, 255, 255, 0.75);
 }
 
+/* ----------------------------------------------------Body House---------------------------------------------------- */
+/* ------------------------------------Places Carts------------------------------------ */
+
+#allplaces div {
+    margin: 1rem 0px;
+    border: 1px solid #999;
+    background-color: var(--Accent1-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "address"
+    "description"
+    "button";
+}
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    color: var(--Text-color);
+    font-family: var(--styling-font-title);
+}
+#allplaces div figure {
+    width: 100%;
+    margin: 0;
+    grid-area: photograph;
+}
+#allplaces div figure img {
+    width: 100%;
+}
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: address;
+    color: var(--Text-color);
+    font-family: var(--styling-font-text);
+}
+#allplaces div p {
+    margin: 1rem 10px;
+    grid-area: description;
+    color: var(--Text-color);
+    font-family: var(--styling-font-text);
+}
+#allplaces div button {
+    margin: 1rem 10px;
+    grid-area: button;
+    color: var(--Title-color);
+    font-family: var(--styling-font-title);
+    background-color: var(--Accent2-color);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.hover {
+    border-radius: 15px;
+    border: solid 2px #000000;
+}
+    
 /* ----------------------------------------------------Footer---------------------------------------------------- */
 
 footer {

@@ -1,4 +1,4 @@
-const url = 'information.json';
+const url = 'data/information.json';
 const spotlights = document.querySelector('#spotlights');
 
 async function getEnterpriseDataCart() {

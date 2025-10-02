@@ -8,7 +8,7 @@
     --Hover: #830240;
     text-decoration: none;
 }
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 1025px) {
     header, main, nav, footer {
         margin: 0 auto;
     }
@@ -98,6 +98,25 @@
     #membershipCarts {
         width: 40%;
     }
+    /* ----------------------------------------------------Body House---------------------------------------------------- */
+    /* ------------------------------------Places Carts------------------------------------ */
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+    #allplaces div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph address"
+        "photograph description"
+        "photograph button";
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #ff0000;
+    }
+
     /* ----------------------------------------------------Footer---------------------------------------------------- */
 
     footer {

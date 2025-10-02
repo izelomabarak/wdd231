@@ -14,9 +14,9 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="styles/medium.css">
-        <script src="scripts/enterprises.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
+        <script src="scripts/last_visit.js" defer></script>
 
         <link rel="icon" href="favicon.ico">
 
@@ -33,22 +33,19 @@
             <nav id="nav-bar" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="current">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#" class="current">Discover</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
-                <nav>
-                    <ul class="filters">
-                        <li><a href="#" id="grid">Grid</a></li>
-                        <li><a href="#" id="list">List</a></li>
-                    </ul>
-                </nav>
-                <div id="cards"></div>
+                <div id="allplaces"></div>
             </section>
+            <div>
+                <p class="visitsDates"></p>
+            </div>
         </main>
         <footer>
             <div>
@@ -67,8 +64,8 @@
                 <p>wdd231 Class Project</p>
                 <p>Jose Luis Izelo Mabarak</p>
                 <p id="year"></p>
-                <p id="modified"></p>
             </div>
         </footer>
+        <script src="scripts/places_carts.js" type="module"></script>
     </body>
 </html>

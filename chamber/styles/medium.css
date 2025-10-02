@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) and (max-width: 740px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
     .filters{
         max-width: 500px;
     }
@@ -54,6 +54,21 @@
     grid-gap: 20px;
     place-items: center;
     padding: 20px;
+    }
+    /* ----------------------------------------------------Body Discover---------------------------------------------------- */
+    /* ------------------------------------Places Carts------------------------------------ */
+    #allplaces div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph address"
+        "photograph description"
+        "photograph button";
+    }
+    #allplaces div figure {
+    width: 300px;
+    }
+    .hover:hover {
+        box-shadow: 0 0 50px #ff0000;
     }
     /* ----------------------------------------------------Body join---------------------------------------------------- */
     .formData {

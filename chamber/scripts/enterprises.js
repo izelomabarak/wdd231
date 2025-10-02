@@ -1,4 +1,4 @@
-const url = 'information.json';
+const url = 'data/information.json';
 const cards = document.querySelector('#cards');
 async function getEnterpriseDataCart() {
   const response = await fetch(url);
