@@ -1,21 +1,24 @@
 
 const visitsDisplayDates = document.querySelector(".visitsDates");
 
-let lastVisit = localStorage.getItem("visitsDates-ls");
+let lastVisit = Number(localStorage.getItem("visitsDates-ls"));
 
 const msToDays = 86400000;
 
 let daysbetewn = (Date.now() - lastVisit) / msToDays;
 
-if (daysbetewn < msToDays) {
-    visitsDisplayDates.textContent = `Back so soon! Awesome!`;
-} else if (daysbetewn > msToDays && daysbetewn < (msToDays * 2)) {
-    visitsDisplayDates.textContent = `You last visited 1 day ago.`;
-} else if (daysbetewn > msToDays) {
-    visitsDisplayDates.textContent = `You last visited ${daysbetewn} days ago.`;
+let mesage = `Welcome! Let us know if you have any questions.`;
+
+if (daysbetewn < 1) {
+    mesage = `Back so soon! Awesome!`;
+} else if (daysbetewn > 1 && daysbetewn < 2) {
+    mesage = `You last visited 1 day ago.`;
 } else {
-    visitsDisplayDates.textContent = `Welcome! Let us know if you have any questions.`;
+    mesage = `You last visited ${Math.floor(daysbetewn)} days ago.`;
 }
+
+visitsDisplayDates.textContent = mesage;
+
 
 const now = Date.now();
 

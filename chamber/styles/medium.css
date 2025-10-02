@@ -70,6 +70,13 @@
     .hover:hover {
         box-shadow: 0 0 50px #ff0000;
     }
+    
+    main {
+        display: grid;
+        grid-template-columns: 89% 9%;
+        column-gap: 2%;
+    }
+
     /* ----------------------------------------------------Body join---------------------------------------------------- */
     .formData {
         display: grid;

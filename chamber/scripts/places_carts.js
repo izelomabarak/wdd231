@@ -17,7 +17,7 @@ const displayEnterpriseCart = (places) => {
     let image = document.createElement('img');
 
     title.textContent = place.name
-    address.textContent = `Addres: ${place.address}`;
+    address.textContent = `Address: ${place.address}`;
     description.textContent = `Description: ${place.description}`
     button.textContent = `Learn More`;
     
