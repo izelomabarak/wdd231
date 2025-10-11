@@ -163,11 +163,11 @@ a.link:hover {
 
 #spotlights .oneCard { 
     background-color: var(--Accent1-color);
-    padding: 1rem;
+    padding: 10px;
     border: none;
     display: grid;
     place-items: center;
-    grid-gap: 0;
+    grid-gap: 20px;
     border: 3px solid black;
 }
 
@@ -180,7 +180,6 @@ a.link:hover {
 
 #spotlights section img { 
     width: 100%;
-    border: 2px solid black;
 }
 
 .oneCart section{ 
@@ -236,6 +235,10 @@ a.link:hover {
     place-items: center;
     grid-gap: 0;
     border: 3px solid black;
+}
+
+#cards img { 
+    width: 100%;
 }
 
 .showHere article button{

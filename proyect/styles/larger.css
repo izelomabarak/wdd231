@@ -100,10 +100,15 @@
     }
     
     #spotlights { 
-    display:grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-    place-items: center;
+        display:grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+        place-items: center;
+    }
+
+    #spotlights .oneCard { 
+        width: 90%;
+        height: 90%;
     }
 
     /* ----------------------------------------------------Body Directory---------------------------------------------------- */
