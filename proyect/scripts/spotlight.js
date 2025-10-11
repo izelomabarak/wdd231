@@ -2,9 +2,14 @@ const url = 'data/information.json';
 const spotlights = document.querySelector('#spotlights');
 
 async function getEnterpriseDataCart() {
-  const response = await fetch(url);
-  const data = await response.json();
-  displayEnterpriseCart(data.especialists);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayEnterpriseCart(data.especialists);
+  } catch (error) {
+    console.error('An error occurred during the asynchronous operation:', error);
+    throw new Error('Failed to retrieve data.');
+  }
 }
         function pickUnique0to3() {
         if (!pickUnique0to3.pool) {
