@@ -1,0 +1,76 @@
+{
+    "especialists": [ 
+        {
+        "name": "Juan Mendez",
+        "phone": "00 1 857-257-3391",
+        "especialty": "Soil Quality Analysis",
+        "img": "images/soil.svg"
+        },
+        {
+        "name": "Raul de la Fuente",
+        "phone": "00 1 455-342-3371",
+        "especialty": "Soil Quality Analysis",
+        "img": "images/soil.svg"
+        },
+        {
+        "name": "Ernesto Ermenegildo",
+        "phone": "00 1 821-223-4491",
+        "especialty": "Soil Quality Analysis",
+        "img": "images/soil.svg"
+        },
+        {
+        "name": "Jon Perez",
+        "phone": "00 1 257-357-2291",
+        "especialty": "Greenhouse Architecture and Construction",
+        "img": "images/construction.svg"
+        },
+        {
+        "name": "Jose Fenduich",
+        "phone": "00 1 357-227-1392",
+        "especialty": "Greenhouse Architecture and Construction",
+        "img": "images/construction.svg"
+        },
+        {
+        "name": "Marcos Muros",
+        "phone": "00 1 123-732-7382",
+        "especialty": "Greenhouse Architecture and Construction",
+        "img": "images/construction.svg"
+        },
+        {
+        "name": "Humberto Lopez",
+        "phone": "00 1 219-623-6318",
+        "especialty": "Plant Health and Nutrition",
+        "img": "images/nutrition.svg"
+        },
+        {
+        "name": "Boris Marte",
+        "phone": "00 1 782-118-6782",
+        "especialty": "Plant Health and Nutrition",
+        "img": "images/nutrition.svg"
+        },
+        {
+        "name": "Porfirio Marques",
+        "phone": "00 1 346-728-9912",
+        "especialty": "Plant Health and Nutrition",
+        "img": "images/nutrition.svg"
+        },
+        {
+        "name": "Josua Frank",
+        "phone": "00 1 122-347-8377",
+        "especialty": "Soil and Ambient Humidity",
+        "img": "images/humidity.svg"
+        },
+        {
+        "name": "Farncis Gutierres",
+        "phone": "00 1 463-345-2873",
+        "especialty": "Soil and Ambient Humidity",
+        "img": "images/humidity.svg"
+        },
+        {
+        "name": "Alfonso Gutentag",
+        "phone": "00 1 123-534-9546",
+        "especialty": "Soil and Ambient Humidity",
+        "img": "images/humidity.svg"
+        }
+    ]
+}

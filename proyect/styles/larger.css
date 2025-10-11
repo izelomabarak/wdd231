@@ -1,0 +1,128 @@
+:root {
+    --styling-font-title: Tektur, Georgia, serif;
+    --styling-font-text: Raleway, Georgia, sans-serif;
+    --Accent1-color: #66ff00;
+    --Accent2-color: #27070d;
+    --Title-color: #00ff11;
+    --Text-color: #550707;
+    --Hover: #830240;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 641px) {
+/* ----------------------------------------------------Body House---------------------------------------------------- */
+/* ------------------------------------Hero------------------------------------ */
+    a.link {
+    display: block;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    width: 25%;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: var(--Accent2-color);
+    text-align: center;
+    color: var(--Title-color);
+    text-decoration: none;
+    font-size: .8rem;
+    border: #00ff11 solid 1px;
+    }
+    /* ----------------------------------------------------Body Directory---------------------------------------------------- */
+    /* ------------------------------------Carts------------------------------------ */
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #membershipCarts {
+    width: 60%;
+    }
+    /* ----------------------------------------------------Body Join---------------------------------------------------- */
+    /* ------------------------------------Dialog------------------------------------ */
+
+    #showHere {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px repeat(2, 1fr);
+    }
+
+    .hamburger {
+        display:none
+    }
+
+    .navigation {
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a {
+        display: block;
+        color: var(--Title-color);
+        background-color: var(--Accent2-color);
+        text-decoration: none;
+        border: solid 1px #000000;
+        padding: .8rem 10px;
+    }
+    /* ----------------------------------------------------Body House---------------------------------------------------- */
+    /* ------------------------------------Hero------------------------------------ */
+
+    .firtsPart{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    }
+
+    a.link {
+    display: block;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: var(--Accent2-color);
+    text-align: center;
+    color: var(--Title-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: #00ff11 solid 1px;
+    }
+    
+    #spotlights { 
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    place-items: center;
+    }
+
+    /* ----------------------------------------------------Body Directory---------------------------------------------------- */
+    /* ------------------------------------Carts------------------------------------ */
+    
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    /* ----------------------------------------------------Body Join---------------------------------------------------- */
+    /* ------------------------------------Dialog------------------------------------ */
+
+    #showHere {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+
+    #membershipCarts {
+    width: 40%;
+    }
+}
